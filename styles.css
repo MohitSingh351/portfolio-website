@@ -334,6 +334,7 @@ body > div.hero-section > div.left-section > p:nth-child(2) {
 .service:hover {
     background: #29ADB2;
     color: white;
+    cursor: pointer;
     transform: translateY(-15px);
 }
 
