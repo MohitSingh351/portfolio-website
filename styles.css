@@ -124,14 +124,16 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 0.5rem;
+    /* border: 2px solid black; */
+    /* width: 50%; */
 }
 
-.right-section p{
+/* .right-section p{
     margin-top: 1rem;
     margin-left: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
-}
+} */
 
 .hero-image {
     background-image: url("./images/my_img.jpg");
@@ -139,7 +141,7 @@
     background-size: cover;
     height: 27rem;
     width: 25rem;
-    margin-left: 6rem;
+    margin-left: 0rem;
     border: 2px solid black;
     border-radius: 50% 50% 0 0;
     margin-top: 2rem;
@@ -150,9 +152,11 @@
 /* LEFT SECTION - HERO SECTION */
 
 .left-section {
+    /* border: 2px solid red; */
     margin-top: 12rem;
     align-items: center;
     justify-content: center;
+    width: 30rem;
 }
 
 .left-section .hi-text {
