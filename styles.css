@@ -190,7 +190,6 @@ body > div.hero-section > div.left-section > p:nth-child(2) {
     color: #29ADB2;
 }
 
-
 /* ABOUT SECTION */
 
 .about-section {
@@ -236,6 +235,8 @@ body > div.hero-section > div.left-section > p:nth-child(2) {
     margin-left: 5rem;
 }
 
+
+
 .about-links {
     border: 2px solid #29ADB2;
     padding: 3px;
@@ -248,6 +249,27 @@ body > div.hero-section > div.left-section > p:nth-child(2) {
     font-weight: 600;
     cursor: pointer; /* --------------------------------------------------------------------------------------------------------*/
     position: relative;
+}
+
+.resume-btn {
+    border: 2px solid #29ADB2;
+    border-radius: 0.3rem;
+    height: 8%;
+    transition: 0.5s ease;
+}
+.resume-btn p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    padding-left: 0.7rem;
+    color: #29ADB2;
+}
+
+.resume-btn:hover {
+    background-color: #29ADB2;
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: white;
 }
 
 .active-link {
