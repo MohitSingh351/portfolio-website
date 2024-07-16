@@ -831,7 +831,7 @@ form input, form textarea {
         overflow: hidden;
         margin-left: 0rem;
         z-index: 1000;
-        width: 90vw;
+        width: 90%;
     }
 
     .hero-image {
@@ -850,7 +850,7 @@ form input, form textarea {
     }
     
     .navbar-collapse {
-        width: 100vw;
+        width: 90%;
         margin-left: -6.8rem;
     }
     .logo {
@@ -1047,7 +1047,7 @@ form input, form textarea {
         width: 100%;
     }
     .logo {
-        margin-left: 1rem;
+        margin-left:2rem;
         /* margin-right: rem; */
     }
     .left-section {
@@ -1081,8 +1081,32 @@ form input, form textarea {
     .about-section {
         margin-top: 1rem;
         margin-left: -4rem;
+        width: 10rem;
     }
     
+    .about-section {
+        width: 100%;
+    }
+    .about-text span {
+        font-size: 2rem;
+    }
+    .about-image {
+        display: none;
+    }
+    .about-text p {
+        font-size: 0.8rem;
+        width: 22rem;
+    }
+    .about-titles {
+        width: 20rem;
+    }
+     .about-links {
+        font-size: 0.8rem;
+        margin-left: 0rem;
+        margin: 1rem;
+        margin-left: 0;
+    }
+
     .services-list {
         display: block;
     }
@@ -1139,21 +1163,7 @@ form input, form textarea {
         margin-bottom: 2rem;
     }
 
-    .about-section {
-        width: 80%;
-    }
-    .about-text span {
-        font-size: 2rem;
-    }
-    .about-image {
-        display: none;
-    }
-    .about-text p {
-        font-size: 0.8rem;
-    }
-     .about-links {
-        font-size: 0.8rem;
-    }
+    
 
     #contact-heading {
         font-size: 2.5rem;
