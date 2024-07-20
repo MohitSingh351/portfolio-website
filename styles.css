@@ -1047,7 +1047,7 @@ form input, form textarea {
         width: 100%;
     }
     .logo {
-        margin-left:2rem;
+        margin-left: 0rem;
         /* margin-right: rem; */
     }
     .left-section {
