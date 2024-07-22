@@ -235,6 +235,9 @@ body > div.hero-section > div.left-section > p:nth-child(2) {
     margin-left: 5rem;
 }
 
+.about-titles a {
+    text-decoration: none;
+}
 
 
 .about-links {
@@ -251,7 +254,7 @@ body > div.hero-section > div.left-section > p:nth-child(2) {
     position: relative;
 }
 
-.resume-btn {
+/* .resume-btn {
     border: 2px solid #29ADB2;
     border-radius: 0.3rem;
     height: 8%;
@@ -270,7 +273,7 @@ body > div.hero-section > div.left-section > p:nth-child(2) {
     cursor: pointer;
     transition: 0.5s ease;
     color: white;
-}
+} */
 
 .active-link {
     transition: 0.5s;
@@ -697,13 +700,38 @@ form input, form textarea {
     }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1100px) {
     .logo {
-        margin-right: 5rem;
-        margin-left: 30%;
+        margin-right: 0rem;
+        margin-left: 1.5rem;
     }
     .navbar-collapse {
-        margin-right: 5rem;
+        margin-right: 0rem;
+        width: 100%;
+    }
+    .nav-options {
+        margin-left: 3.5rem;
+        width: 100%;
+    }
+    .hero-section {
+        height: 45rem;
+    }
+    #services-heading{
+        margin-left: 2rem;
+        text-align: left;
+        font-size: 3rem;
+    }
+    .service i {
+        font-size: 1.2rem;
+    }
+    .services-list div {
+        margin: 2rem;
+    }
+    .services .service-heading{
+        font-size: 1.3rem;
+    }
+    .service p {
+        font-size: 0.9rem;
     }
 }
 @media only screen and (max-width: 900px) {
