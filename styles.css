@@ -1039,7 +1039,6 @@ form input, form textarea {
         display: block;
         margin-left: 0rem;
     }
-
     .hero-image {
         background-image: url("./images/my_img.jpg");
         background-repeat: no-repeat;
@@ -1051,10 +1050,10 @@ form input, form textarea {
         border-radius: 50%;
         margin-top: 4rem;
         margin-bottom: 3rem;
-        margin-left: -2.5rem;
+        margin-left: -1rem;
         box-shadow: 0px 5px 10px 0px #29ADB2;
     }
-
+    
     .check {
         display: block;
         float: right;
@@ -1071,7 +1070,7 @@ form input, form textarea {
     }
     
     .nav-options{
-        margin-left: 6rem;
+        margin-left: 3rem;
         width: 100%;
     }
     .logo {
@@ -1084,7 +1083,7 @@ form input, form textarea {
         margin-left: -7rem;
     }
     .left-section .hi-text {
-        margin-left: 15px;
+        margin-left: 20px;
         font-size: 2.5rem;
     }
     .hero-section p {
@@ -1152,7 +1151,7 @@ form input, form textarea {
     .service i{
         font-size: 1rem;
         margin-top: 1rem;
-        color: rgb(125, 33, 33);
+        color: #29ADB2;;
     }
     .service-heading {
         margin-left: 50px;
@@ -1162,6 +1161,10 @@ form input, form textarea {
     .services {
         width: 50vh;
         margin-left: -30px;
+    }
+
+    .service p {
+        font-size: 0.8rem;
     }
 
     #projects-heading {
