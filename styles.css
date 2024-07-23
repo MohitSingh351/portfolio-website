@@ -375,6 +375,11 @@ div.service:hover p{
 div.service:hover i{
     color: white;
 }
+
+.bi::before, [class*=" bi-"]::before, [class^=bi-]::before {
+    vertical-align: -0.7rem;
+    margin-bottom: -2rem;
+}
 /* PROJECTS SECTION */
 .projects {
     margin-left: 0rem;
@@ -553,6 +558,7 @@ div.service:hover i{
 }
 
 #contact-heading{
+    color: #29ADB2;
     font-size: 3.5rem;
     font-weight: 900;
     margin-left: 5rem;
