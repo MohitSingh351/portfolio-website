@@ -1110,9 +1110,10 @@ form input, form textarea {
     } */
 
     .about-section {
+        /* border: 2px solid black; */
         margin-top: 1rem;
-        margin-left: -3rem;
-        width: 7rem;
+        margin-left: -20px;
+        width: 100vw;
     }
     .about-text span {
         font-size: 2rem;
@@ -1122,10 +1123,17 @@ form input, form textarea {
     }
     .about-text p {
         font-size: 0.8rem;
-        width: 21rem;
+        margin-left: 2rem;
+        width: 80vw;
+        /* width: 21rem; */
     }
     .about-titles {
         width: 20rem;
+    }
+    .about-contents {
+        /* border: 2px solid black; */
+        width: 90vw;
+        margin-left: -3rem;
     }
      .about-links {
         font-size: 0.8rem;
@@ -1133,7 +1141,6 @@ form input, form textarea {
         margin: 1rem;
         margin-left: 0;
     }
-
     .services-list {
         display: block;
     }
