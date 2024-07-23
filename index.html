@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="./images/file.png" type="image/x-icon">
 </head>
@@ -99,10 +101,11 @@
                 <div class="about-links active-link" onclick="opentab('skills')">Skills</div>
                 <div class="about-links" onclick="opentab('experience')">Experience</div>
                 <div class="about-links" onclick="opentab('education')">Education</div>
-                <a class="resume-btn" href="./Resume.pdf" download="Mohit_Singh_Resume.pdf"><div class="about-links ">Resume</div></a>
+                <a class="resume-btn" href="./Mohit-Singh-Resume.pdf" download="Mohit_Singh_Resume.pdf"><div class="about-links ">Resume</div></a>
             </div>
             <div class="tab-contents active-tab" id="skills">
                 <ul>
+                    <p>Data Science</p>
                     <p>Digital marketing</p>
                     <p>Excel</p>
                     <p>Website Development</p>
@@ -116,7 +119,7 @@
             <div class="tab-contents" id="education">
                 <ul>
                     <p>Class 12: 72%</p>
-                    <p>Currently studing at Adani University pursuing CSE(AI-ML)</p>
+                    <p>Sem 1</p>
                 </ul>
             </div>
         </div>
@@ -128,12 +131,9 @@
         <p id="services-heading" id="services-heading">Services</p>
         <div class="services-list">
             <div class="service-1 service">
-                <i class="fa-solid fa-bullhorn"></i>
-                <p class="service-heading">Digital Marketing</p>
-                <p>Specializing in digital marketing and SEO services, I'm dedicated to enhancing your online presence
-                    and driving meaningful engagement. With expertise in content creation, social media campaigns, and
-                    paid advertising, I maximize your digital footprint. Through precise SEO techniques including
-                    keyword research and technical audits, I ensure improved search engine rankings and organic traffic.
+                <i class="bi bi-graph-up"></i>
+                <p class="service-heading">Data Science</p>
+                <p>Harness the power of your data to drive smarter decisions and achieve better results. I specialize in making sense of complex data, transforming it into clear and actionable insights. Whether it's analyzing trends, predicting outcomes, or automating tasks, my data science solutions are designed to help your business grow. Let’s work together to uncover the hidden potential in your data and turn it into a valuable asset for your success.
                 </p>
             </div>
             <div class="service-2 service">
@@ -147,14 +147,12 @@
 
             </div>
             <div class="service-3 service">
-                <i class="fa-solid fa-table"></i>
-                <p class="service-heading">Excel Solutions</p>
-                <p>Elevate your business efficiency with my Excel expertise. From data analysis to spreadsheet
-                    automation, I offer comprehensive Excel services tailored to streamline your operations and drive
-                    productivity. Whether you need customized templates, data visualization, or advanced functions, our
-                    team ensures your Excel solutions are optimized for your unique needs. Let us empower your business
-                    with the power of Excel, transforming complex tasks into seamless processes for enhanced performance
-                    and success.</p>
+                <i class="fa-solid fa-bullhorn"></i>
+                <p class="service-heading">Digital Marketing</p>
+                <p>Specializing in digital marketing and SEO services, I'm dedicated to enhancing your online presence
+                    and driving meaningful engagement. With expertise in content creation, social media campaigns, and
+                    paid advertising, I maximize your digital footprint. Through precise SEO techniques including
+                    keyword research and technical audits, I ensure improved search engine rankings and organic traffic.</p>
             </div>
         </div>
     </div>
@@ -167,64 +165,61 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front project-1">
-                            <p class="text p-heading">Turtle Race</p>
-                            <p class="text p-description">Dive into the excitement of turtle racing with my interactive
-                                Python game! Place your bet on the winning turtle's color and watch as they dash towards
-                                the finish line. Will luck be on your side? Find out in this thrilling and entertaining
-                                turtle race game!</p>
+                            <p class="text p-heading">Parkinson's Disease Detection</p>
+                            <p class="text p-description">
+                                In this project, I developed a machine learning model to detect Parkinson's disease from voice recordings. Utilizing both Logistic Regression and Support Vector Classification (SVC), I achieved an impressive 90% accuracy with each model. This project showcases my skills in data preprocessing, feature engineering, and model evaluation, highlighting the potential of machine learning in healthcare diagnostics.
+                            </p>
                         </div>
                         <div class="flip-card-back">
                             <div class="video turtle_race">
                                 <video controls>
-                                    <source src="./videos/Turtle_race.mp4" type="video/mp4">
+                                    <source src="./videos/parkinson_disease_detection_project.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/MohitSingh351/Python-codes/blob/main/turtle_race.py" target="_blank"><button type="button" class="btn">See code</button></a>
+                <a href="https://github.com/MohitSingh351/Parkinson-Disease-Detection/blob/main/main.ipynb" target="_blank"><button type="button" class="btn">See code</button></a>
             </div>
             <div class="project">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front project-2">
-                            <p class="text p-heading">Hangman</p>
-                            <p class="text p-description">Welcome to Hangman, a Python-powered word guessing adventure!
-                                Test your word skills by guessing letters to uncover the secret word before you run out
-                                of chances. It's a thrilling blend of strategy and fun, brought to life with Python's
-                                coding prowess. Can you triumph over the challenge and solve the puzzle?</p>
+                            <p class="text p-heading">Credit Card Fraud Detection</p>
+                            <p class="text p-description">
+                                In this project, I developed a machine learning model to detect credit card fraud using Logistic Regression. The model achieved a 96% accuracy rate and a 96.2% AUC, demonstrating its effectiveness in identifying fraudulent transactions. This project highlights my expertise in data preprocessing, feature selection, and model evaluation, showcasing the practical application of machine learning in financial security.
+                            </p>
                         </div>
                         <div class="flip-card-back">
                             <div class="video hangman">
                                 <video controls>
-                                    <source src="./videos/hangman_game.mp4" type="video/mp4">
+                                    <source src="./videos/credit_card_fraud_detection_project.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/MohitSingh351/Python-codes/blob/main/hangman_game.py" target="_blank"><button type="button" class="btn">See code</button></a>
+                <a href="https://github.com/MohitSingh351/Credit-card-fraud-detection/blob/main/main1.ipynb" target="_blank"><button type="button" class="btn">See code</button></a>
             </div>
             <div class="project">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front project-3">
-                            <p class="text p-heading">Password Generator</p>
-                            <p class="text p-description">Introducing the Python-based Password Generator! Create strong
-                                and secure passwords with ease. Customize your password with letters, symbols, and
-                                numbers. It's a simple yet effective tool to enhance your online security. Generate
-                                passwords effortlessly with Python!</p>
+                            <p class="text p-heading">Mall Customer Segmentation</p>
+                            <p class="text p-description">
+                                In this project, I performed customer segmentation using K-means clustering on mall customer data. By analyzing customer spending habits and income levels, I identified distinct customer segments based on their purchasing behavior. This project showcases my skills in data visualization, clustering algorithms, and customer profiling, offering valuable insights for targeted marketing strategies.
+                            </p>
                         </div>
                         <div class="flip-card-back">
                             <div class="video">
                                 <video controls>
-                                    <source src="./videos/pwd_generator.mp4" type="video/mp4">
+                                    <source src="./videos/mall_customer_segmentation_project.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/MohitSingh351/Python-codes/blob/main/password_generator.py" target="_blank"><button type="button" class="btn">See code</button></a>
+                <a href="https://github.com/MohitSingh351/Mall-Customer-Segmentation/blob/main/main.ipynb" target="_blank"><button type="button" class="btn">See code</button></a>
             </div>
         </div>
         <div class="projects-2">
@@ -232,22 +227,21 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front project-4">
-                            <p class="text p-heading">Turtle Crossing</p>
-                            <p class="text p-description">Embark on an adventure with Turtle Crossing, a Python game
-                                where turtles brave speeding traffic to reach safety! Guide your turtle across lanes of
-                                moving cars, dodging obstacles as you go. With each level, the challenge intensifies as
-                                cars speed up. Can you help your turtle conquer the road?</p>
+                            <p class="text p-heading">Real and Fake News Detection</p>
+                            <p class="text p-description">
+                                This project involves using machine learning to differentiate between fake and real news, achieving high accuracy with several models. Logistic Regression reached 98.73%, Decision Tree Classifier 99.63%, Random Forest Classifier 98.90%, and Gradient Boosting Classifier 99.61%. This project showcases my ability to apply and evaluate various classification techniques effectively.
+                            </p>
                         </div>
                         <div class="flip-card-back">
                             <div class="video turtle_crossing">
                                 <video controls>
-                                    <source src="./videos/turtle_crossing.mp4" type="video/mp4">
+                                    <source src="./videos/real_and_fake_news_detection_project.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/MohitSingh351/Python-codes/tree/main/turtle_crossing" target="_blank"><button type="button" class="btn">See code</button></a>
+                <a href="https://github.com/MohitSingh351/Fake-and-Real-News-Detection/blob/main/main.ipynb" target="_blank"><button type="button" class="btn">See code</button></a>
             </div>
             <div class="project">
                 <div class="flip-card">

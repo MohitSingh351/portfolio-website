@@ -337,13 +337,16 @@ body > div.hero-section > div.left-section > p:nth-child(2) {
     margin: 1rem;
     color: #29ADB2;
 }
-
 .service-heading{
     margin-top: 0.5rem;
     margin-left: 1rem;
     font-size: 1.75rem;
     font-weight: 1000;
     color: #29ADB2;
+}
+
+.service-1 p {
+    margin-top: 0.9rem;
 }
 
 .services-list div {
@@ -357,7 +360,6 @@ body > div.hero-section > div.left-section > p:nth-child(2) {
     background-color: white;
     transition: 0.5s;
     transform: 0.5s;
-    
 }
 
 .service:hover {
@@ -448,7 +450,7 @@ div.service:hover i{
 
 .p-heading {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .p-description {
