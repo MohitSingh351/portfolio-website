@@ -1040,6 +1040,7 @@ form input, form textarea {
         width: 100%;
         display: block;
         margin-left: 0rem;
+        height: 100vh;
     }
     .hero-image {
         background-image: url("./images/my_img.jpg");
@@ -1050,9 +1051,9 @@ form input, form textarea {
         overflow-x: hidden;
         border: 2px solid black;
         border-radius: 50%;
-        margin-top: 4rem;
+        margin-top: 5rem;
         margin-bottom: 3rem;
-        margin-left: -1.5rem;
+        margin-left: -1.3rem;
         box-shadow: 0px 5px 10px 0px #29ADB2;
     }
     
@@ -1082,9 +1083,11 @@ form input, form textarea {
         /* margin-right: rem; */
     }
     .left-section {
+        /* border: 2px solid black; */
         width: 92vw;
-        margin-top: 4rem;
-        margin-left: -7rem;
+        margin-top: 10rem;
+        margin-left: -8rem;
+        padding-left: 1.5rem;
     }
     .left-section .hi-text {
         margin-left: 20px;
@@ -1097,6 +1100,8 @@ form input, form textarea {
     }
 
     .right-section {
+        /* border: 2px solid black; */
+
         margin-left: 0rem;
         width: fit-content;
     }
@@ -1135,11 +1140,17 @@ form input, form textarea {
         width: 90vw;
         margin-left: -3rem;
     }
-     .about-links {
+    .about-links {
         font-size: 0.8rem;
         margin-left: 0rem;
         margin: 1rem;
         margin-left: 0;
+    }
+    /* ----------------------------SERVICES------------------- */
+    .services {
+        /* border: 2px solid black; */
+        width: 100vw;
+        margin-left: -1.2rem;
     }
     .services-list {
         display: block;
@@ -1165,17 +1176,19 @@ form input, form textarea {
         font-size: 1.3rem;
         margin-top: 1.5rem;
     }
-    .services {
-        width: 30vh;
-        margin-left: -15px;
-    }
 
     .service p {
         font-size: 0.8rem;
     }
+    /* -------------PROJECTS------------------------ */
+    .projects {
+        width: 100vw;
+        margin-left: 0.4rem;
+        /* border: 2px solid black; */
 
+    }
     #projects-heading {
-        margin-left: 30px;
+        margin-left: 2rem;
         text-align: left;
         font-size: 2.5rem;
     }
@@ -1224,5 +1237,18 @@ form input, form textarea {
     }
     .copyright-section {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero-image {
+        margin-left: -2.5rem;
+    }
+    .left-section {
+        /* border: 2px solid black; */
+        width: 92vw;
+        margin-top: 8rem;
+        margin-left: -8rem;
+        padding-left: 0.8rem;
     }
 }
