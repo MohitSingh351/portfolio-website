@@ -39,17 +39,14 @@
     <meta name="twitter:description" content="Explore my projects in data science, machine learning, and web development.">
     <meta name="twitter:image" content="https://mohitsingh.me/images/m_logo.png"> <!-- Update with your image URL -->
 
-    <title>Mohit's Portfolio Website</title>
+    <title>Mohit Singh | Product Engineer & SaaS Builder</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playpen+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="./images/file.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Source+Sans+Pro:wght@400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./globals.css">
+    <link rel="shortcut icon" href="./images/image.png" type="image/x-icon">
 </head>
 
 <body>
@@ -58,380 +55,353 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid navbar_container">
-                <div class="nav-logo">
-                    <div class="logo"></div>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-                    style="background-color: white;">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse align-right" id="navbarNav">
-                    <ul class="navbar-nav nav-options">
-                        <div class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
-                        </div>
-
-                        <div class="nav-item">
-                            <a href="#about-heading" class="nav-link">About</a>
-                        </div>
-
-                        <div class="nav-item">
-                            <a href="#services-heading" class="nav-link">Services</a>
-                        </div>
-
-                        <div class="nav-item">
-                            <a href="#projects-heading" class="nav-link">Projects</a>
-                        </div>
-
-                        <div class="nav-item">
-                            <a href="#contact-heading" class="nav-link">Contact Me</a>
-                        </div>
-                    </ul>
-                </div>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="images\image_11.png" alt="Mohit Singh Logo" class="logo-image">
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-options">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#experience-section" class="nav-link">Experience</a></li>
+                <li><a href="#education-section" class="nav-link">Education</a></li>
+                <li><a href="#certifications-section" class="nav-link">Certifications</a></li>
+                <li><a href="#smartdocs-section" class="nav-link">SmartDocs</a></li>
+                <li><a href="#services-section" class="nav-link">Services</a></li>
+                <li><a href="#projects-section" class="nav-link">Projects</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <div class="hero-section">
-        <div class="left-section">
-            <p class="hi-text">Hi, I'm <span>Mohit</span></p>
-            <p>and I am <span id="element"></span></p>
-        </div>
-        <div class="right-section">
-            <div class="hero-image"></div>
-        </div>
-    </div>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Mohit Singh</h1>
+                <h2><span id="element"></span></h2>
+                <p class="hero-description">I am a product-focused software engineer specializing in building B2B SaaS applications. I am passionate about solving real-world business problems, from automating financial workflows with my SmartDocs project to de-risking new ventures in the freight-tech space through direct user research. My goal is to build scalable, valuable products.</p>
+                <a href="./Resume for PM.pdf" download="Mohit_Singh_Resume.pdf" class="resume-btn">Download Resume</a>
+            </div>
+            <div class="hero-image-container">
+                <img src="./images/new_img3.jpg" alt="Mohit Singh" class="hero-image">
+            </div>
+        </section>
 
-    <div class="about-section">
-
-        <div class="about-text" id="about-heading">
-            <p><span>About Me</span></p>
-            <p>Hey there! 👋 I'm Mohit Singh, a passionate programmer and web developer 🚀.</p>
-            <p>Specializing in crafting user-friendly websites, I thrive on turning ideas into digital realities 💻.</p>
-            <p>From elegant front-end designs to robust back-end functionalities, I bring creativity and technical
-                excellence to every project🎨.</p>
-                <p>My skills extend beyond coding—I've mastered Excel for data precision and completed Google's Digital
-                    Marketing course for strategic insights 📊. </p>
-            <p>I love problem-solving and am committed to finding solutions that not only meet but exceed
-                expectations💡. </p>
-                <p>Staying ahead in the tech game, I integrate the latest tools and methodologies into my work.</p>
-                <p>When not immersed in code, you'll find me exploring new coding languages, experimenting with design
-                    concepts, or playing badminton🏸.</p>
-            <p>Let's connect and explore the exciting possibilities that technology has to offer! 🌐✨</p>
-            <div class="about-contents">
-                <div class="about-titles">
-                    <div class="about-links active-link" onclick="opentab('skills')">Skills</div>
-                    <div class="about-links" onclick="opentab('experience')">Experience</div>
-                    <div class="about-links" onclick="opentab('education')">Education</div>
-                    <a class="resume-btn" href="./Mohit-Singh-Resume.pdf" download="Mohit_Singh_Resume.pdf"><div class="about-links ">Resume</div></a>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <p>Data Science</p>
-                        <p>Digital marketing</p>
-                        <p>Excel</p>
-                        <p>Website Development</p>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <p>Fresher</p>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <p>Class 12: 72%</p>
-                        <p>Adani University: 1st year - 8.7 CGPA</p>
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience-section">
+            <div class="section-header">
+                <h2>Experience</h2>
+            </div>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Artificial Intelligence Intern</h3>
+                        <span class="experience-period">SEPTEMBER 2024 - DECEMBER 2024</span>
+                    </div>
+                    <div class="experience-company">
+                        <span class="company-name">Infosys Springboard</span>
+                        <span class="company-location">Remote</span>
+                    </div> 
+                    <ul class="experience-description">
+                        <li>As an Infosys Springboard intern, I developed a CNN-based model to classify skin images as benign or malignant, improving diagnostic accuracy in medical image analysis.</li>
+                        <li>Implemented the project using Python and TensorFlow, handling data preprocessing, model training, and evaluation to ensure reliable performance.</li>
+                        <li>Enhanced model robustness with techniques like data augmentation and dropout, contributing to more accurate and generalizable skin cancer detection.</li>
                     </ul>
                 </div>
             </div>
-            
-        </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section" id="education-section">
+            <div class="section-header">
+                <h2>Education</h2>
+            </div>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Bachelor of Technology</h3>
+                        <span class="education-grade">CGPA: 8.86</span>
+                    </div>
+                    <div class="education-details">
+                        <span class="institution">Adani University</span>
+                        <span class="period">3rd Year (Current)</span>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Class 12th</h3>
+                        <span class="education-grade">72%</span>
+                    </div>
+                    <div class="education-details">
+                        <span class="institution">Secondary Education</span>
+                        <span class="period">Completed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <div class="about-image"></div>
-    </div>
+        <!-- Certifications Section -->
+        <section class="certifications-section" id="certifications-section">
+            <div class="section-header">
+                <h2>Certifications</h2>
+            </div>
+            <div class="certifications-content">
+                <div class="certification-item">
+                    <h3>Google Project Management</h3>
+                    <span class="cert-provider">Professional Certificate &mdash; Coursera</span>
+                    <a href="https://coursera.org/verify/professional-cert/GG6LDBJFDQI5" class="cert-link">Show Credential</a>
+                </div>
+                <div class="certification-item">
+                    <h3>Business Intelligence &amp; Analytics</h3>
+                    <span class="cert-provider">NPTEL &mdash; Top 1%</span>
+                    <a href="https://internalapp.nptel.ac.in/noc/Ecertificate/?q=NPTEL25CS09S64040045004218901" class="cert-link">Show Credential</a>
+                </div>
+                <div class="certification-item">
+                    <h3>Python For Data Science</h3>
+                    <span class="cert-provider">NPTEL &mdash; Top 5%</span>
+                    <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24CS54S54460012730114142" class="cert-link">Show Credential</a>
+                </div>
+                <div class="certification-item">
+                    <h3>Fundamentals of Digital Marketing</h3>
+                    <span class="cert-provider">Google</span>
+                    <a href="https://skillshop.exceedlms.com/student/award/fa9pZroUXyyAcZoTp4k4uF2z" class="cert-link">Show Credential</a>
+                </div>
+                <div class="certification-item">
+                    <h3>The Data Science Course Bootcamp</h3>
+                    <span class="cert-provider">Udemy</span>
+                    <a href="https://ude.my/UC-e0dacf3f-ed20-4ba7-8cd7-d05d24d6cb3a/" class="cert-link">Show Credential</a>
+                </div>
+                <div class="certification-item">
+                    <h3>Microsoft Excel - Excel for Beginner to Advanced</h3>
+                    <span class="cert-provider">Udemy</span>
+                    <a href="https://www.udemy.com/certificate/UC-00352782-4d75-4198-b6f9-652d7e9d30d1/" class="cert-link">Show Credential</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="services">
-        <p id="services-heading" id="services-heading">Services</p>
-        <div class="services-list">
-            <div class="service-1 service">
-                <i class="bi bi-graph-up"></i>
-                <p class="service-heading">Data Science</p>
-                <p>Harness the power of your data to drive smarter decisions and achieve better results. I specialize in making sense of complex data, transforming it into clear and actionable insights. Whether it's analyzing trends, predicting outcomes, or automating tasks, my data science solutions are designed to help your business grow. Let’s work together to uncover the hidden potential in your data and turn it into a valuable asset for your success.
-                </p>
+        <!-- SmartDocs Star Project Section -->
+        <section class="smartdocs-section" id="smartdocs-section">
+            <div class="section-header">
+                <h2>SmartDocs</h2>
             </div>
-            <div class="service-2 service">
-                <i class="fa-solid fa-compass-drafting"></i>
-                <p class="service-heading">Website Development</p>
-                <p>Unlock the power of your online presence with my end-to-end web solutions. I specialize in crafting
-                    SEO-friendly websites that are seamlessly navigable, ensuring your clients can easily comprehend and
-                    engage with your content. From design to functionality, I prioritize user experience and search
-                    engine visibility, empowering your brand to stand out in the digital landscape. Partner with me to
-                    create a website that captivates, converts, and propels your business forward.</p>
+            
+            <div class="smartdocs-content">
+                <div class="smartdocs-video">
+                    <div class="video-placeholder">
+                        <p>YouTube Demo Video</p>
+                    </div>
+                </div>
+                
+                <div class="smartdocs-details">
+                    <h3>Automating Financial Workflows for SMBs</h3>
+                    <p><strong>Business Problem:</strong> Small and medium businesses struggle with manual document processing, data entry errors, and scalable document management systems.</p>
+                    
+                    <p><strong>Solution:</strong> SmartDocs automates financial workflows, reduces manual data entry, and provides a scalable document management platform.</p>
+                    
+                    <div class="smartdocs-features">
+                        <div class="feature">✓ Automated data extraction</div>
+                        <div class="feature">✓ Error reduction algorithms</div>
+                        <div class="feature">✓ Scalable cloud architecture</div>
+                        <div class="feature">✓ Real-time analytics</div>
+                    </div>
+                    
+                    <a href="https://www.notion.so/SmartDocs-Product-Documentation-Portfolio-1d93d1432627807db74fd75ede255b5e?source=copy_link" class="case-study-btn">View Complete Case Study</a>
+                </div>
+            </div>
+        </section>
 
+        <section class="services-section" id="services-section">
+            <div class="section-header">
+                <h2>Services</h2>
             </div>
-            <div class="service-3 service">
-                <i class="fa-solid fa-bullhorn"></i>
-                <p class="service-heading">Digital Marketing</p>
-                <p>Specializing in digital marketing and SEO services, I'm dedicated to enhancing your online presence
-                    and driving meaningful engagement. With expertise in content creation, social media campaigns, and
-                    paid advertising, I maximize your digital footprint. Through precise SEO techniques including
-                    keyword research and technical audits, I ensure improved search engine rankings and organic traffic.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Science</h3>
+                    <p>Harness the power of your data to drive smarter decisions and achieve better results. I specialize in making sense of complex data, transforming it into clear and actionable insights for business growth.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Digital Marketing</h3>
+                    <p>Specializing in digital marketing and SEO services, I'm dedicated to enhancing your online presence and driving meaningful engagement with data-driven strategies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Product Management</h3>
+                    <p>End-to-end product lifecycle management, from ideation to launch, with a focus on user research and business value.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>SaaS Development</h3>
+                    <p>Building scalable, secure, and user-friendly SaaS applications for B2B clients using modern technologies.</p>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- PROJECTS SECTION -->
-    <p id="projects-heading">Projects</p>
-    <div class="projects">
-        <div class="projects-1">
-            <div class="project">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front project-1">
-                            <p class="text p-heading">Parkinson's Disease Detection</p>
-                            <p class="text p-description">
-                                In this project, I developed a machine learning model to detect Parkinson's disease from voice recordings. Utilizing both Logistic Regression and Support Vector Classification (SVC), I achieved an impressive 90% accuracy with each model. This project showcases my skills in data preprocessing, feature engineering, and model evaluation, highlighting the potential of machine learning in healthcare diagnostics.
-                            </p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="video turtle_race">
-                                <video controls>
-                                    <source src="./videos/parkinson_disease_detection_project.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://github.com/MohitSingh351/Parkinson-Disease-Detection/blob/main/main.ipynb" target="_blank"><button type="button" class="btn">See code</button></a>
+        <section class="projects-section" id="projects-section">
+            <div class="section-header">
+                <h2>Other Projects</h2>
             </div>
-            <div class="project">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front project-2">
-                            <p class="text p-heading">Credit Card Fraud Detection</p>
-                            <p class="text p-description">
-                                In this project, I developed a machine learning model to detect credit card fraud using Logistic Regression. The model achieved a 96% accuracy rate and a 96.2% AUC, demonstrating its effectiveness in identifying fraudulent transactions. This project highlights my expertise in data preprocessing, feature selection, and model evaluation, showcasing the practical application of machine learning in financial security.
-                            </p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="video hangman">
-                                <video controls>
-                                    <source src="./videos/credit_card_fraud_detection_project.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Parkinson's Disease Detection</h3>
+                    <p>Developed a machine learning model to detect Parkinson's disease from voice recordings, achieving 90% accuracy using Logistic Regression and SVC.</p>
+                    <a href="https://github.com/MohitSingh351/Parkinson-Disease-Detection/blob/main/main.ipynb" target="_blank" class="project-btn">View Code</a>
                 </div>
-                <a href="https://github.com/MohitSingh351/Credit-card-fraud-detection/blob/main/main1.ipynb" target="_blank"><button type="button" class="btn">See code</button></a>
-            </div>
-            <div class="project">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front project-3">
-                            <p class="text p-heading">Mall Customer Segmentation</p>
-                            <p class="text p-description">
-                                In this project, I performed customer segmentation using K-means clustering on mall customer data. By analyzing customer spending habits and income levels, I identified distinct customer segments based on their purchasing behavior. This project showcases my skills in data visualization, clustering algorithms, and customer profiling, offering valuable insights for targeted marketing strategies.
-                            </p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="video">
-                                <video controls>
-                                    <source src="./videos/mall_customer_segmentation_project.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div class="project-card">
+                    <h3>Credit Card Fraud Detection</h3>
+                    <p>Built a fraud detection model achieving 96% accuracy and 96.2% AUC, demonstrating expertise in financial security applications.</p>
+                    <a href="https://github.com/MohitSingh351/Credit-card-fraud-detection/blob/main/main1.ipynb" target="_blank" class="project-btn">View Code</a>
                 </div>
-                <a href="https://github.com/MohitSingh351/Mall-Customer-Segmentation/blob/main/main.ipynb" target="_blank"><button type="button" class="btn">See code</button></a>
-            </div>
-        </div>
-        <div class="projects-2">
-            <div class="project">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front project-4">
-                            <p class="text p-heading">Real and Fake News Detection</p>
-                            <p class="text p-description">
-                                This project involves using machine learning to differentiate between fake and real news, achieving high accuracy with several models. Logistic Regression reached 98.73%, Decision Tree Classifier 99.63%, Random Forest Classifier 98.90%, and Gradient Boosting Classifier 99.61%. This project showcases my ability to apply and evaluate various classification techniques effectively.
-                            </p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="video turtle_crossing">
-                                <video controls>
-                                    <source src="./videos/real_and_fake_news_detection_project.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div class="project-card">
+                    <h3>Mall Customer Segmentation</h3>
+                    <p>Performed customer segmentation using K-means clustering, providing valuable insights for targeted marketing strategies.</p>
+                    <a href="https://github.com/MohitSingh351/Mall-Customer-Segmentation/blob/main/main.ipynb" target="_blank" class="project-btn">View Code</a>
                 </div>
-                <a href="https://github.com/MohitSingh351/Fake-and-Real-News-Detection/blob/main/main.ipynb" target="_blank"><button type="button" class="btn">See code</button></a>
             </div>
-            <div class="project">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front project-5">
-                            <p class="text p-heading">Pong Game</p>
-                            <p class="text p-description">Introducing Python Pong, a timeless arcade classic brought to
-                                life! Take control of your paddle and challenge the computer or a friend to an
-                                exhilarating game of virtual table tennis. With sleek graphics and intuitive controls,
-                                Python Pong offers a thrilling gaming experience that's both fun and addictive. Get
-                                ready to smash, volley, and score your way to victory!</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="video pong">
-                                <video controls>
-                                    <source src="./videos/pong_game.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://github.com/MohitSingh351/pong-game" target="_blank"><button type="button" class="btn">See code</button></a>
-            </div>
-            <div class="project">
-                <div class="flip-card">
-                    <div class="flip-card-inner project-6">
-                        <div class="flip-card-front">
-                            <p class="text p-heading">Pomodoro Tracker</p>
-                            <p class="text p-description">Introducing the Python Pomodoro Tracker! Organize your work
-                                and break intervals effortlessly with this sleek and user-friendly application. Designed
-                                around the Pomodoro Technique, it helps you optimize your productivity by structuring
-                                your tasks into manageable blocks of time. Stay focused, stay efficient, and achieve
-                                your goals with the Pomodoro Tracker.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="video">
-                                <video controls>
-                                    <source src="./videos/pomodoro.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://github.com/MohitSingh351/pomodoro-tracker/blob/main/main.py" target="_blank"><button type="button" class="btn">See code</button></a>
-            </div>
-        </div>
-        <div class="projects-3">
-            
-        </div>
-            
-            
-        </div>
-    </div>
-    </div>
+        </section>
 
     <!--------------------------- CONTACT SECTION -------------------------------->
-    <div class="contact-section">
-        <div class="contact-details">
+    <section class="contact-section" id="contact-section">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>Let's discuss how we can work together</p>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+</svg></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>mohitrs2005@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg></div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 8128825276</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohit-singh-624903293/" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/MohitSingh351" target="_blank" class="social-link">GitHub</a>
+                    <a href="https://stackoverflow.com/users/23473609/mohit-singh" target="_blank" class="social-link">Stack Overflow</a>
+                </div>
+            </div>
 
-            <p id="contact-heading">Contact Me</p>
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-send-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                </svg> mohitrs2005@gmail.com</p>
-
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                </svg> +91 8128825276</p>
-
-            <div class="contact-icons">
-                <a href="https://www.linkedin.com/in/mohit-singh-624903293/">
-                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                        </svg></p>
-                </a>
-                <a href="https://github.com/MohitSingh351">
-                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-github" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                        </svg></p>
-                </a>
-                <a href="https://stackoverflow.com/users/23473609/mohit-singh">
-                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-stack-overflow" viewBox="0 0 16 16">
-                            <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282z" />
-                            <path
-                                d="M3.857 13.145h7.137v-1.428H3.857zM10.254 0 9.108.852l4.26 5.727 1.146-.852zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468z" />
-                        </svg></p>
-                </a>
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" name="Name" id="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" name="Email" id="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" id="Message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="msg" style="margin-top: 1rem; color: var(--accent-primary); text-align: center; font-weight: 600; display: none;"></div>
             </div>
         </div>
+    </section>
+    </main>
 
-        <div class="contact-form">
-            <form name="submit-to-google-sheet">
-                <input type="text" placeholder="Your Name" name="Name" id="Name"><br />
-                <input type="email" placeholder="Your Email" name="Email" id="Email"><br />
-                <textarea name="Message" id="Message" rows="6" placeholder="Your Message"></textarea><br />
-                <input class="btn btn-primary" type="submit" value="Submit" id="contact-submit-button"><br />
-            </form>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Mohit Singh. Built with passion for creating meaningful products.</p>
         </div>
-    </div>
-
-    <div class="copyright-section">
-        <div class="copyright-contents">
-            <p>Copyright &copy;. Made by Mohit.</p>
-        </div>
-    </div>
+    </footer>
 
     <!-- ############################################################################################################################## -->
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['a Data Scientist.', 'a Programmer.', 'a Web Developer.', 'a Digital Marketer.'],
-            typeSpeed: 50,
+            strings: ['Product Engineer', 'SaaS Builder', 'Digital Marketer', 'Data Scientist'],
+            typeSpeed: 80,
             loop: true
         });
 
-        var tablinks = document.getElementsByClassName("about-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove('active-link');
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove('active-tab');
-            }
-
-            event.currentTarget.classList.add('active-link'); // Corrected class name here
-            document.getElementById(tabname).classList.add('active-tab');
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwzrat2ElSnB73-4qlBLTe037ykBxitqmDZqaOm8MC7apbyLlu0mfBwZ1YxQQq1OEL3/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzKsWhR8JJr49FZAMmn3yXHEyxZT7KziYD7ze2jGGRn8nIbfu0DebI7mM9Wa2TSLYV1ug/exec'
         const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
 
         form.addEventListener('submit', e => {
             e.preventDefault()
+            
+            // Show loading state
+            const submitBtn = form.querySelector('.submit-btn')
+            const originalText = submitBtn.textContent
+            submitBtn.textContent = 'Sending...'
+            submitBtn.disabled = true
+            
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
+                .then(response => {
+                    console.log('Success!', response)
+                    msg.innerHTML = "Thank you! Your message has been sent successfully."
+                    msg.style.display = "block"
+                    form.reset()
+                    setTimeout(() => {
+                        msg.innerHTML = ""
+                        msg.style.display = "none"
+                    }, 5000)
+                })
+                .catch(error => {
+                    console.error('Error!', error.message)
+                    msg.innerHTML = "Sorry, there was an error sending your message. Please try again."
+                    msg.style.display = "block"
+                    setTimeout(() => {
+                        msg.innerHTML = ""
+                        msg.style.display = "none"
+                    }, 5000)
+                })
+                .finally(() => {
+                    // Reset button state
+                    submitBtn.textContent = originalText
+                    submitBtn.disabled = false
+                })
         })
-    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script>
-        function doGet(e) {
-            var output = ContentService.createTextOutput();
-            output.setMimeType(ContentService.MimeType.JSON);
-            output.setContent('Your response content');
-            var result = output.execute();
-            result.headers = { 'Access-Control-Allow-Origin': '*' };
-            return result;
-        }
+        // Mobile Menu Toggle Functionality
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navOptions = document.querySelector('.nav-options');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            navOptions.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('.nav-options a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                navOptions.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuToggle.contains(e.target) && !navOptions.contains(e.target)) {
+                mobileMenuToggle.classList.remove('active');
+                navOptions.classList.remove('active');
+            }
+        });
     </script>
 
 </body>
