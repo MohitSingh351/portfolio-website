@@ -1192,7 +1192,7 @@ section {
     background: var(--bg-card);
     border: 2px dashed var(--accent-primary);
     border-radius: 15px;
-    padding: 3rem;
+    padding: 1rem;
     text-align: center;
     color: var(--text-secondary);
     box-shadow: 0 10px 30px var(--glow-primary);
