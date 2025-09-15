@@ -1198,6 +1198,24 @@ section {
     box-shadow: 0 10px 30px var(--glow-primary);
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    background: var(--bg-card);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--glow-primary);
+    border: 2px solid var(--accent-primary);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 13px;
+}
+
 .smartdocs-details h3 {
     font-family: var(--font-heading);
     color: var(--accent-primary);
@@ -1720,6 +1738,15 @@ section {
         gap: 2rem;
     }
     
+    .video-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .video-container video {
+        border-radius: 10px;
+    }
+    
     .services-grid,
     .projects-grid {
         grid-template-columns: 1fr;
@@ -1872,5 +1899,30 @@ section {
     
     .smartdocs-features {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Additional responsive styles for smaller mobile devices */
+@media (max-width: 480px) {
+    .smartdocs-content {
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .video-container {
+        border-radius: 10px;
+        border-width: 1px;
+    }
+    
+    .video-container video {
+        border-radius: 8px;
+    }
+    
+    .smartdocs-details h3 {
+        font-size: 1.5rem;
+    }
+    
+    .smartdocs-features {
+        gap: 0.5rem;
     }
 }
