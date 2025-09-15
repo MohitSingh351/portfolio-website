@@ -1241,6 +1241,31 @@ section {
     color: var(--text-primary);
 }
 
+.smartdocs-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.smartdocs-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px var(--glow-blue);
+    transition: all 0.3s ease;
+}
+
+.smartdocs-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px var(--glow-blue);
+    color: var(--text-primary);
+}
+
 /* SERVICES SECTION - Modern Card Grid */
 .services-section {
     padding: 4rem 2rem;
@@ -1831,12 +1856,18 @@ section {
     .resume-btn,
     .submit-btn,
     .project-btn,
-    .case-study-btn {
+    .case-study-btn,
+    .smartdocs-btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
         width: 100%;
         text-align: center;
         margin-top: 1rem;
+    }
+    
+    .smartdocs-buttons {
+        flex-direction: column;
+        gap: 0;
     }
     
     .smartdocs-features {
